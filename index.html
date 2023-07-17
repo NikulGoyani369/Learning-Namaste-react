@@ -8,6 +8,7 @@
 
   <body>
     <div id="root"></div>
+    <h3 id="rootP"></h3>
 
     <script
       crossorigin
@@ -23,10 +24,14 @@
     <script>
 
         const heading = React.createElement('h1', {}, 'Hello Wolrd from React!');
-        
         const root = ReactDOM.createRoot(document.getElementById('root'));
-
         root.render(heading)
+
+
+        const addParagraph = React.createElement('p',{}, 'This is a Namaste React Learning Course');
+        const rootParagraph = ReactDOM.createRoot(document.getElementById('rootP'));
+        rootParagraph.render(addParagraph)
+
     </script>
   </body>
 </html>
